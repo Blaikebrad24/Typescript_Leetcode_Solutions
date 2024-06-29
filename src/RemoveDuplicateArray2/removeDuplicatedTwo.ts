@@ -1,7 +1,6 @@
-import test from "node:test";
 
 let testNumbers: number[] = [0,0,1,1,1,1,2,3,3];
-function removeDuplicates(nums: number[]): number {
+function removeDuplicatesTwo(nums: number[]): number {
 
     if(nums.length <=2){return nums.length;}
     let i: number = 0;
@@ -11,7 +10,8 @@ function removeDuplicates(nums: number[]): number {
             nums[i++] = n;
         }
     })
+    
     console.log(nums);
     return i;
 }
-console.log(removeDuplicates(testNumbers));
+console.log(removeDuplicatesTwo(testNumbers));
